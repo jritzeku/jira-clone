@@ -10,7 +10,7 @@ const projectRoutes = require('./routes/projectRoutes')
 const { notFound, errorHandler } = require('./middlewares/errorMw')
 const cookieParser = require('cookie-parser')
 dotenv.config()
-
+const path = require('path')
 const http = require('http')
  
 
@@ -34,13 +34,28 @@ Cookie Parser is a middleware of Node JS used to get cookie
 */
 app.use(cookieParser())
 
-app.get('/', (req, res) => {
-  res.send('API is running....')
-})
+ 
 app.use('/api/user', userRoutes)
 app.use('/api/task', taskRoutes)
 app.use('/api/project', projectRoutes)
- 
+const ___dirname = path.resolve()
+
+if (process.env.NODE_ENV === 'production') {
+  //set static folder
+  app.use(express.static(path.join(___dirname, '/frontend/build')))
+
+  //any route that is not API will be redirected to index.html
+  app.get('*', (req, res) =>
+    res.sendFile(path.resolve(___dirname, 'frontend', 'build', 'index.html'))
+  )
+} else {
+  // app.get('/', (req, res) => {
+  //   res.send('API is running....')
+  // })
+}
+
+
+
 
 app.use(notFound)
 app.use(errorHandler)
