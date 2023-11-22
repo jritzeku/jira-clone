@@ -34,7 +34,6 @@ Cookie Parser is a middleware of Node JS used to get cookie
 */
 app.use(cookieParser())
 
- 
 app.use('/api/user', userRoutes)
 app.use('/api/task', taskRoutes)
 app.use('/api/project', projectRoutes)
@@ -55,15 +54,9 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-
-
 app.use(notFound)
 app.use(errorHandler)
 
 const server = http.createServer(app)
  
-
- 
 server.listen(port, () => console.log(`Listening on port ${port}`))
-
- 
