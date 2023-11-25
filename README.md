@@ -35,12 +35,13 @@ https://jira-clone-305b.onrender.com
 
 ## How to run  locally 
 
-1. Create DB with following tables: 
+1. Create DB in MongoDB Atlas with following tables: 
 
     ->users, tasks, projects 
     
 2. Create following .env file in root folder containing following:
 
+----------------------------------------------------------------
 MONGO_URI =   (your mongodb connection string)
 
 JWT_KEY =  (some string)
@@ -54,6 +55,8 @@ CLOUDINARY_SECRET_KEY=
 PORT =  5001
 
 NODE_ENV=  'development'
+
+----------------------------------------------------------------
 
 3. Run 'npm i' in root folder, and 'npm i --force' in front end folder
 
