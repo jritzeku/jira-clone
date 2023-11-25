@@ -1,0 +1,24 @@
+ 
+
+-Regular users
+
+	->Register   //skip
+	->Login 
+	->View projects
+	->View tasks
+	->Kanban functionality 
+		-can NOT move to ‘Completed’ status if not admin
+
+
+
+
+-Admin user
+
+	->Add project 
+	->Edit project
+	->Delete project 
+	->Add task
+	->Edit Task 
+	->Delete task 
+	->Kanban functionality 
+	
