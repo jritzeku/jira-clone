@@ -98,13 +98,13 @@ const AddTask = () => {
       ) : projectsError ? (
         <div className='danger'>{error?.data?.message || error.error}</div>
       ) : (
-        <div className='w-full  flex items-center justify-around '>
+        <div className='w-full  flex items-center justify-around text-[12px] '>
           <div className='w-[800px]'>
             <p className='text-xl font-semibold text-center  mb-4 '>Add Task</p>
 
             <form
               onSubmit={formik.handleSubmit}
-              className='w-full  flex flex-col items-center justify-center gap-5 bg-white   py-8'
+              className='w-full  flex flex-col items-center justify-center gap-3 bg-white   py-8'
             >
               {/*Assignee */}
 
@@ -226,7 +226,7 @@ const AddTask = () => {
               </div>
 
               {/* Status */}
-              <div className='w-full flex flex-col gap-2  px-8'>
+              {/* <div className='w-full flex flex-col gap-2  px-8'>
                 <label
                   className='text-gray-500 font-semibold text-[14px]'
                   htmlFor=''
@@ -250,7 +250,7 @@ const AddTask = () => {
                     setStatus(selectedOption)
                   }}
                 />
-              </div>
+              </div> */}
 
               {/*Assignee */}
 

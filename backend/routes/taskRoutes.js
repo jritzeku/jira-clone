@@ -16,7 +16,7 @@ const { imgUploadMw, profileImgResizeMw } = require('../middlewares/uploadMw')
 const taskRoutes = express.Router()
 
 taskRoutes.post('/:id', authMw, adminMw, createTaskAdmin)
-taskRoutes.put('/:id', authMw, adminMw, editTaskAdmin)
+taskRoutes.put('/:id', authMw, editTaskAdmin)
 taskRoutes.delete('/:id', authMw, adminMw, deleteTaskAdmin)
 taskRoutes.get('/', authMw, getTasks)
 taskRoutes.get('/myTasks', authMw, getMyTasks)

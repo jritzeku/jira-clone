@@ -11,7 +11,7 @@ const AdminRoute = () => {
   const { data: user, isLoading, error } = useGetUserQuery(userInfo?._id)
  
 
-  return userInfo.data.isAdmin === true ? (
+  return userInfo?.data?.isAdmin === true ? (
     <div className='flex items-center  gap-2'>
       <Sidebar userInfo={userInfo} user={user} />
 

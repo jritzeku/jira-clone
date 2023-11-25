@@ -29,16 +29,14 @@ const Login = () => {
 
   const [login, { isLoading }] = useLoginMutation()
 
- 
   const { userInfo } = useSelector((state) => state.auth)
- 
+
   const formik = useFormik({
     initialValues: {
       email: '',
       password: '',
     },
 
-   
     onSubmit: async (values) => {
       const res = await login(values)
 
@@ -59,8 +57,8 @@ const Login = () => {
   }, [navigate, userInfo])
 
   return (
-    <div className='text-center'>
-      <p className=' text-2x mb-8 font-serif  '>Log In</p>
+    <div className='text-center mt-8'>
+      <p className='  text-2xl mb-8 font-serif text-center'>Sign In</p>
 
       <div className='flex justify-center mb-6'>
         <form

@@ -141,7 +141,11 @@ const Tasks = () => {
         Header: 'Due Date',
         accessor: 'dueDate',
         Cell: ({ cell: { value } }) => {
-          return <div className='font'>{value}</div>
+          return (
+            <div className='font'>
+              {DateTime.fromISO(value).toLocaleString(DateTime.Date_MED)}
+            </div>
+          )
         },
       },
 

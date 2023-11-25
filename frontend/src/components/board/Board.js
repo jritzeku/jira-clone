@@ -45,19 +45,24 @@ const Board = ({ projId, openEdit, setOpenEdit }) => {
   const [deleteTask, { isLoading: loadingDelete }] = useDeleteTaskMutation()
 
   const editTaskHandler = async (editedData) => {
+  //  console.log('Inside editTaskHandler')
     setOpenEdit(false)
 
     try {
-      await editTask(editedData)
-      tasksRefetch()
+      let res = await editTask(editedData)
+      if (res.data) {
+        tasksRefetch()
+      }
     } catch (err) {}
   }
 
   const deleteTaskHandler = async (task) => {
     if (window.confirm('Are you sure?')) {
       try {
-        await deleteTask(task._id)
-        tasksRefetch()
+        let res = await deleteTask(task._id)
+        if (res.data) {
+          tasksRefetch()
+        }
       } catch (err) {}
     }
   }

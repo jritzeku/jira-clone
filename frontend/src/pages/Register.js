@@ -82,7 +82,7 @@ const Register = () => {
   })
 
   return (
-    <div>
+    <div className='mt-8'>
       <p className='  text-2xl mb-8 font-serif text-center'>Join Jira</p>
 
       <div className='flex justify-center mb-6'>

@@ -65,7 +65,7 @@ const AddProject = () => {
 
         <form
           onSubmit={formik.handleSubmit}
-          className='w-full  flex flex-col items-center justify-center gap-5 bg-white   py-8'
+          className='w-full  flex flex-col items-center justify-center gap-3 bg-white   py-8'
         >
           {/* Title */}
 
