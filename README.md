@@ -23,6 +23,7 @@ https://jira-clone-305b.onrender.com
 		-can NOT move to ‘Completed’ status if not admin
 
 -Admin user
+
 	->Add project 
 	->Edit project
 	->Delete project 
@@ -35,16 +36,23 @@ https://jira-clone-305b.onrender.com
 ## How to run  locally 
 
 1. Create DB with following tables: 
+
     ->users, tasks, projects 
     
 2. Create following .env file in root folder containing following:
 
 MONGO_URI =   (your mongodb connection string)
+
 JWT_KEY =  (some string)
+
 CLOUDINARY_CLOUD_NAME =  (your cloudinary creds)
+
 CLOUDINARY_API_KEY= 
+
 CLOUDINARY_SECRET_KEY=  
+
 PORT =  5001
+
 NODE_ENV=  'development'
 
 3. Run 'npm i' in root folder, and 'npm i --force' in front end folder
