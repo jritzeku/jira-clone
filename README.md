@@ -2,9 +2,7 @@
 
 ## View demo of application
 
-    ->download DEMO.mov file (from github)
-        -should cover most of the use cases
-
+https://www.youtube.com/watch?v=YlwLhb7eEYg
 
 ## Deployed on render.com
 
