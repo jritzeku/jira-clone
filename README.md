@@ -1,6 +1,7 @@
 # jira-clone application
 
-## View demo of application
+## DEMO!!!
+This should cover most of the features/use cases.
 
 https://www.youtube.com/watch?v=YlwLhb7eEYg
 
@@ -43,7 +44,6 @@ https://jira-clone-305b.onrender.com
 MONGO_URI =   (your mongodb connection string)
 
 JWT_KEY =  (some string)
-
 
 PORT =  5001
 
