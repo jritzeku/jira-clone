@@ -1,6 +1,11 @@
-# jira-clone application
+<h1 align="center">jira-clone</h1>
 
 ## DEMO!!!
+
+A project management application containing core functionalities of jira app. This app is meant for learning/educational purposes only.
+
+&nbsp;
+
 This should cover most of the features/use cases.
 
 https://www.youtube.com/watch?v=YlwLhb7eEYg
@@ -8,50 +13,56 @@ https://www.youtube.com/watch?v=YlwLhb7eEYg
 ## Deployed on render.com
 
 https://jira-clone-305b.onrender.com
- 
 
 ## Features/Use cases
 
 -Regular users
 
-	->Register    
-	->Login 
-	->View projects
-	->View tasks
-	->Kanban functionality (drag and drop feature)
-		-can NOT move to ‘Completed’ status if not admin
+- [x] Register
+- [x] Login
+- [x] View projects
+- [x] View tasks
+- [x] Kanban board drag/drop functionality (drag and drop feature)
+ 
 
 -Admin user
 
-	->Add project 
-	->Edit project
-	->Delete project 
-	->Add task
-	->Edit Task 
-	->Delete task 
-	->Kanban functionality 
-	
+- [x] Add project
+- [x] Edit project
+- [x] Delete project
+- [x] Add task
+- [x] Edit Task
+- [x] Delete task
+ 
 
-## How to run  locally 
+## How to run locally
 
-1. Create DB in MongoDB Atlas with following tables: 
+1. Create DB in MongoDB Atlas with following tables:
 
-    ->users, tasks, projects 
-    
-2. Create following .env file in root folder containing following:
+  	 	->users, tasks, projects
 
-----------------------------------------------------------------
-MONGO_URI =   (your mongodb connection string)
+2. Create  .env file in root folder containing following:
 
-JWT_KEY =  (some string)
 
-PORT =  5001
 
-NODE_ENV=  'development'
+		MONGO_URI = (your mongodb connection string)
 
-----------------------------------------------------------------
+		JWT_KEY = (some string)
 
-3. Run 'npm i' in root folder, and 'npm i --force' in front end folder
+		PORT = 5001
 
-4. Run 'npm run dev' in root folder
+		NODE_ENV= 'development'
 
+ 
+
+3.  Install dependencies.
+
+    > 'npm i' //in root folder,
+
+    > 'npm i --force' //in front end folder
+
+ 
+
+4. START our application!(runs both client and server concurrently)
+
+   > 'npm run dev' //in root folder
