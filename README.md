@@ -44,11 +44,6 @@ MONGO_URI =   (your mongodb connection string)
 
 JWT_KEY =  (some string)
 
-CLOUDINARY_CLOUD_NAME =  (your cloudinary creds)
-
-CLOUDINARY_API_KEY= 
-
-CLOUDINARY_SECRET_KEY=  
 
 PORT =  5001
 
