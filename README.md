@@ -8,7 +8,7 @@ A project management application containing core functionalities of jira app. Th
 
 This should cover most of the features/use cases.
 
-https://youtu.be/pJGE9UdmVUw
+https://youtu.be/5A641Vlgirw
 
 ## Deployed on render.com
 
